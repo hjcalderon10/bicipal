@@ -1,4 +1,7 @@
-var weather = require('openweather-apis');
+import { Meteor } from 'meteor/meteor';
+
+Meteor.methods({
+    var weather = require('openweather-apis');
  
     weather.setLang('it');
     // English - en, Russian - ru, Italian - it, Spanish - es (or sp),
@@ -23,3 +26,6 @@ var weather = require('openweather-apis');
  
     // check http://openweathermap.org/appid#get for get the APPID
  	weather.setAPPID('9c5a0f593ca3dbb2c693cdb89d840b0b');
+        }
+    },
+});
